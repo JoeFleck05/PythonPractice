@@ -34,7 +34,7 @@ def f():
     print(y)
     print(z)
 
-
+'''
 try:
     a = input("type a number: ")
     b = input("type another: ")
@@ -43,11 +43,18 @@ try:
     print(a/b)
 except(ZeroDivisionError,ValueError):
     print("Invalid Input.")
+'''
 
-
+'''
+Write a function that takes a number as an input and returns that
+number squared.
+'''
 def squared_function(n):
     print(n*2)
 
+'''
+Create a function that accepts a string as a parameter and prints it.
+'''
 def string_print(str):
     print(str)
 
@@ -66,3 +73,24 @@ def takes_int():
 def times_four(n):
     return n * 4
 
+'''
+Write a function that converts a string to a float and returns the result.
+Use exception handling to catch the exception that could occur.
+'''
+def convert_string(s):
+    try:
+        print(float(s))
+    except (ValueError):
+        print("Invalid output!")
+
+
+'''
+Guess the color
+'''
+def guess_color():
+    colors = ["Blue","Green","Red","Pink","Orange"]
+    guess = input("Guess a color?")
+    if guess in colors:
+        print("Your guess is correct!")
+    else:
+        print("Wrong! Try again.")
