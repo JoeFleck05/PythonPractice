@@ -94,3 +94,18 @@ def guess_color():
         print("Your guess is correct!")
     else:
         print("Wrong! Try again.")
+
+
+'''
+dictionaries examples
+'''
+def what_song():
+    rhymes = {" 1": "fun", "2": "blue", "3": "me", "4": "floor", "5": "live"}
+    
+    n = input("Type a number:")
+    if n in rhymes:
+        rhymes = rhymes[n]
+        print(rhymes)
+    else:
+        print("Not Found!")
+        
