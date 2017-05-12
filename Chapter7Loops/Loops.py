@@ -52,3 +52,49 @@ print(tv)
 print("")
 
 #
+tv = ["GOT","Narcos","Vice"]
+for i, show in enumerate(tv):
+    new = tv[i]
+    new = new.upper()
+    tv[i] = new
+
+print(tv)
+
+print("")
+# You can use for-loops to move data between mutable iterables.
+# For example, you can use two for-loops to take all the strings
+# from two different lists, capitalize each character in them, and
+# put them into a new list:
+
+tv = ["GOT","Narcos","Vice"]
+
+for i, show in enumerate(tv):
+    new = tv[i]
+    new = new.upper()
+    tv[i] = new
+
+print(tv)
+
+print("")
+#
+tv = ["GOT","Narcos","Vice"]
+coms = ["Arrested Development","Friends","Always Sunny"]
+all_shows = []
+
+for show in tv:
+    show = show.upper()
+    all_shows.append(show)
+
+for show in coms:
+    show = show.upper()
+    all_shows.append(show)
+
+print(all_shows)
+
+# range function to create a sequence of integers, and use a for-loop to iterate through them.
+# The range function takes two parameters: a number where the sequence starts and a number where
+# the sequence stops. The sequence of integers returned by the range function includes
+# the first parameter (the number to start at), but not the second parameter
+# (the number to stop at).
+
+
