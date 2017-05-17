@@ -91,10 +91,57 @@ for show in coms:
 
 print(all_shows)
 
+#Range
 # range function to create a sequence of integers, and use a for-loop to iterate through them.
 # The range function takes two parameters: a number where the sequence starts and a number where
 # the sequence stops. The sequence of integers returned by the range function includes
 # the first parameter (the number to start at), but not the second parameter
 # (the number to stop at).
 
+for i in range(1,11):
+    print(i)
 
+
+#While-Loops
+    # a loop that executes code as long as an expression evaluates to True
+print("while-loop")
+x = 10
+while x > 0:
+    print('{}'.format(x))
+    x -= 1
+print("Happy New Year!")
+
+
+#Break (break-statement)
+print("break-statement")
+for i in range(0, 100):
+    print(i)
+    break
+
+qs = ["What is your name?",
+      "What is your favorite color?",
+      "What is your quest?"]
+n = 0
+while True:
+    print("Type a to quit")
+    a = input(qs[n])
+    if a == "q":
+        break
+    n = (n+1)%3
+
+#Continue
+print("continue-statement— a")
+for i in range(1,6):
+    if i == 3:
+        continue
+    print(i)
+
+i = 1
+while i <= 5:
+    if i == 3:
+        i += 1
+        continue
+    print(i)
+    i+=1
+
+#Nested Loops
